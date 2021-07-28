@@ -1,0 +1,23 @@
+const api = 'https://pokeapi.co/api/v2/pokemon?limit=151'
+
+    
+   useEffect (() => {
+       getList()
+   }, [])
+    const fun = ({pokemon}) => {
+        
+    }
+    const loaded = () => {
+        return(
+        <div className = 'leftScreen'>
+            <h2 className = 'pokemonNames'>
+                <pokeList/>
+
+            </h2>
+
+        </div>
+        )}
+    const loading = () => {
+        return <h1>WHO'SE THAT POKEMON?!</h1>
+    }
+    return list ? loaded() : loading()
